@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    font-family: sans;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center a {
+    padding: 10px 20px;
+    background: #eee;
+    color: #111;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+ 
+/* ======= configure modal ========  */
+
+#popup {
+    margin: 0 auto;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+#popup .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    background: transparent;
+}
+
+.close-popup {
+    position: relative;
+    padding-right: 5px;
+    float: right;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#popup:target {
+    display: block;
+}
